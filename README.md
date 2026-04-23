@@ -9,7 +9,7 @@ The system is designed as a **2D plotter**, where the end-effector can trace sha
 ---
 
 
-### Prototype 
+### Prototype Demo:
 
 
 
