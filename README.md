@@ -5,6 +5,7 @@
 This project implements a **5-bar parallel robot** capable of converting (x, y) coordinates into real-world motion using inverse kinematics.
 
 The system is designed as a **2D plotter**, where the end-effector can trace shapes such as polygons within its reachable workspace.
+Unlike serial manipulators, the 5-bar parallel mechanism keeps motors fixed at the base, reducing inertia and improving responsiveness.
 
 ---
 
@@ -44,6 +45,9 @@ The reachable workspace of the robot was computed to understand motion limits an
 * Outer boundary → maximum reach
 * Inner region → unreachable zone (singularity constraints)
 <img width="571" height="399" alt="image" src="https://github.com/user-attachments/assets/9db9b547-1543-475b-b794-c3f2fc5fedbf" />
+
+The shaded region represents all reachable end-effector positions.
+The inner gap corresponds to singular/unreachable configurations.
 
 
 ---
@@ -122,7 +126,7 @@ This ensures smooth and continuous motion within the workspace.
 
 ### Extension: Quadruped Robotics 🐾
 
-The same kinematic principles can be extended to **quadruped robot legs**, where:
+The same kinematic principles can be extended to **quadruped robot legs** - similar 5-bar mechanisms can be used for leg design, enabling precise foot trajectory control while keeping actuators near the body for better weight distribution.
 
 * The 5-bar mechanism acts as a leg linkage
 * Provides compact and efficient motion
