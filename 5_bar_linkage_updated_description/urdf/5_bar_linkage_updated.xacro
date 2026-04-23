@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<robot name="5_bar_linkage_updated" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find 5_bar_linkage_updated_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find 5_bar_linkage_updated_description)/urdf/5_bar_linkage_updated.trans" />
+<xacro:include filename="$(find 5_bar_linkage_updated_description)/urdf/5_bar_linkage_updated.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.060000000000004994 0.011000000000000003 0.004999999999999999" rpy="0 0 0"/>
+    <mass value="0.04352967241879617"/>
+    <inertia ixx="9e-06" iyy="7.9e-05" izz="8.7e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_Test_1">
+  <inertial>
+    <origin xyz="-0.019937725644104298 0.010000000000000002 -0.020149916213734267" rpy="0 0 0"/>
+    <mass value="0.034497450464846056"/>
+    <inertia ixx="6e-06" iyy="9e-06" izz="6e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0475 -0.001 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/Servo_Test_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0475 -0.001 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/Servo_Test_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_Test__1__1">
+  <inertial>
+    <origin xyz="0.019937725644104315 -0.009999999999999997 -0.020149916213734267" rpy="0 0 0"/>
+    <mass value="0.034497450464846056"/>
+    <inertia ixx="6e-06" iyy="9e-06" izz="6e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0725 -0.021 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/Servo_Test__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0725 -0.021 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/Servo_Test__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cap_holder_1">
+  <inertial>
+    <origin xyz="0.07639651942149595 0.059012781339033774 0.034178512110536935" rpy="0 0 0"/>
+    <mass value="0.00371143192557449"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="3e-06" ixy="-1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.034 0.01 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/cap_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.034 0.01 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/cap_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_left_A_1">
+  <inertial>
+    <origin xyz="-0.0421451369879919 0.014525680562190793 0.030767251273709356" rpy="0 0 0"/>
+    <mass value="0.0037114319255745105"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="3e-06" ixy="1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.049 -0.032 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/servo_left_A_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.049 -0.032 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/servo_left_A_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_link_2_1">
+  <inertial>
+    <origin xyz="-0.0457010702686948 0.036171300566067016 0.004557324688960841" rpy="0 0 0"/>
+    <mass value="0.0036317699763165215"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="4e-06" ixy="2e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.122642 -0.063601 -0.0195" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.122642 -0.063601 -0.0195" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_link_1_1">
+  <inertial>
+    <origin xyz="0.04642552934398115 0.04094431135446674 -0.0038157328550005153" rpy="0 0 0"/>
+    <mass value="0.004160275922360175"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="4e-06" ixy="-2e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.00644 -0.060164 -0.0135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.00644 -0.060164 -0.0135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lower_link_2_1">
+  <inertial>
+    <origin xyz="0.020275929731305202 -0.016047699433932985 0.0065573246889608396" rpy="0 0 0"/>
+    <mass value="0.0036317699763165215"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="4e-06" ixy="2e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.056665 -0.11582 -0.0175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.056665 -0.11582 -0.0175" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://5_bar_linkage_updated_description/meshes/lower_link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 1" type="fixed">
+  <origin xyz="0.0475 0.001 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Servo_Test_1"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="0.0725 0.021 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Servo_Test__1__1"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="-0.0385 -0.031 -0.026" rpy="0 0 0"/>
+  <parent link="Servo_Test__1__1"/>
+  <child link="cap_holder_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.0015 0.031 -0.026" rpy="0 0 0"/>
+  <parent link="Servo_Test_1"/>
+  <child link="servo_left_A_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.022665 0.12582 0.0335" rpy="0 0 0"/>
+  <parent link="cap_holder_1"/>
+  <child link="lower_link_2_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute 8" type="continuous">
+  <origin xyz="-0.05544 0.028164 0.0295" rpy="0 0 0"/>
+  <parent link="servo_left_A_1"/>
+  <child link="lower_link_1_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 9" type="continuous">
+  <origin xyz="0.063105 0.055656 0.004" rpy="0 0 0"/>
+  <parent link="lower_link_1_1"/>
+  <child link="lower_link_2_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+</robot>
