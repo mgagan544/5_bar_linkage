@@ -14,7 +14,10 @@ Unlike serial manipulators, the 5-bar parallel mechanism keeps motors fixed at t
 
 
 
-https://github.com/user-attachments/assets/ca069497-f3ad-4e33-bab9-e6bb1ae5c59c
+
+https://github.com/user-attachments/assets/fde6fda2-4cf9-4887-a721-92114b2b783e
+
+
 
 <img width="781" height="679" alt="five_bar2" src="https://github.com/user-attachments/assets/b9a010c5-b6a0-4775-8fcc-ca679d9c6dc9" />
 
